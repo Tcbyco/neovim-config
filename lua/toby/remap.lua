@@ -29,3 +29,6 @@ vim.keymap.set("n", "<leader>Y", "\"+Y")
 
 -- replace all for the current word you're on
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+--remap copilot to ctrl+spacesimap
+vim.keymap.set('i', '<C-Space>', 'copilot#Accept("CR")', {expr=true, silent=true})
